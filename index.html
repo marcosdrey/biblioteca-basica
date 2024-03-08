@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h1>Adicionar Livros</h1>
+    
+    <div class="form-container">
+        <button id="abrir_formulario">Abrir formulário</button>
+        <form id="form" class="hidden">
+            <label for="nome">Nome do livro:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do livro" required>
+
+            <label for="autor">Nome do autor:</label>
+            <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor" required>
+
+            <label for="paginas">Quantidade de páginas:</label>
+            <input type="number" id="paginas" name="paginas" placeholder="Digite a quantidade de páginas" min="1" required>
+
+            <label for="descricao">Descrição do livro:</label>
+            <textarea id="descricao" name="descricao" placeholder="Digite uma breve descrição do livro" rows="5" required></textarea>
+
+            <div class="buttons">
+                <input type="button" value="Limpar tudo" onclick="this.form.reset()">
+                <input type="submit" value="Enviar formulário" id="enviar-formulario">
+            </div>
+        </form>
+    </div>
+    <div class="minha_livraria">
+        <h3>Meus Livros</h3>
+        <div class="grid-de-livros">
+            
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

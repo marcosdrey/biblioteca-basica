@@ -1,0 +1,162 @@
+
+        /* Estilos gerais da página */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        #abrir_formulario {
+            display: block;
+            margin: 0 auto 10px;
+            width: 45%;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Estilos do formulário */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 50px;
+            max-width: 90%;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #444;
+        }
+
+        form {
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            display: block;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 50%;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input[type="button"], input[type="submit"] {
+            width: 45%;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover, input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .minha_livraria {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 50px;
+            max-width: 90%;
+            gap: 15px;
+        }
+
+        .minha_livraria h3 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .minha_livraria .grid-de-livros {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .minha_livraria .grid-de-livros .card-livro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 20px;
+            gap: 5px;
+            background-color: #ccc;
+            color: #000;
+        }
+
+        .minha_livraria .grid-de-livros .card-livro h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .minha_livraria .grid-de-livros .card-livro h5 {
+            font-weight: 600;
+            font-size: .9rem;
+        }
+        .minha_livraria .grid-de-livros .card-livro p {
+            font-size: .8rem;
+        }
+        .minha_livraria .grid-de-livros .card-livro .itens-de-interacao {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .minha_livraria .grid-de-livros .card-livro .itens-de-interacao i {
+            cursor: pointer;
+        }
+        .minha_livraria .grid-de-livros .card-livro .itens-de-interacao i:hover {
+            color: #fff;
+        }
+
+        .btnDescricao {
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid #000;
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btnDescricao:hover {
+            background-color: #000;
+        }
